@@ -1,6 +1,6 @@
 {
   "name": "batcave-reader",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Offline DC comic library and reader",
   "main": "index.js",
   "scripts": {
