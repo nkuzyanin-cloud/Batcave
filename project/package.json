@@ -1,0 +1,40 @@
+{
+  "name": "batcave-reader",
+  "version": "1.0.0",
+  "description": "Offline DC comic library and reader",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "check": "tsc --noEmit",
+    "test": "vitest run tests/unit",
+    "test:e2e": "playwright test",
+    "build": "npm run check && node scripts/pdf-assets.mjs && vite build && node scripts/service-worker.mjs",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@noble/hashes": "^2.4.0",
+    "@zip.js/zip.js": "^2.23.0",
+    "idb": "^8.0.4",
+    "lucide-react": "^1.54.0",
+    "pdfjs-dist": "^6.4.299",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.0",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "fake-indexeddb": "^6.2.5",
+    "prettier": "^3.9.9",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.3"
+  },
+  "private": true
+}
